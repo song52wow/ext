@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "turbo run release:pre --parallel"
+    "build": "turbo run release:pre --parallel",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish"
   },
   "keywords": [],
   "author": "",

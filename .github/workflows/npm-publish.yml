@@ -27,8 +27,10 @@ jobs:
 
 
       - name: Create Release Pull Request or Publish
-        id: changesets
         uses: changesets/action@v1
+        with:
+          publish: pnpm changeset:publish
+          version: pnpm changeset:version
         env:
           # Needs access to push to main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
