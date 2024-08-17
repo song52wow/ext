@@ -1,0 +1,14 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": ["dist/**"]
+    },
+    "lint": {},
+    "test": {},
+    "test:coverage": { "outputs": ["coverage/**"] },
+    "release:pre": {
+      "dependsOn": ["build"]
+    }
+  }
+}
